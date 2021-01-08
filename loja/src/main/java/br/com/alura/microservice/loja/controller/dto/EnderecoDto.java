@@ -29,5 +29,10 @@ public class EnderecoDto {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("%s, %s - %s", this.rua, this.numero, this.estado);
+	}
 
 }

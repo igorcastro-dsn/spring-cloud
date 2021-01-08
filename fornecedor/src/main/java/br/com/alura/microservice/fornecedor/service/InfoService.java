@@ -4,15 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.alura.microservice.fornecedor.model.InfoFornecedor;
+import br.com.alura.microservice.fornecedor.repository.InfoRepository;
 
 @Service
 public class InfoService {
 
 	@Autowired
-	private InfoRepository repository;
+	private InfoRepository infoRepository;
 	
-	public InfoFornecedor obterInfoPorEstado(String estado) {
-		return repository.findByEstado(estado);
+	public InfoFornecedor getInfoPorEstado(String estado) {
+		return infoRepository.findByEstado(estado);
 	}
-
 }
