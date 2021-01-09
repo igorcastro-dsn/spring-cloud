@@ -14,6 +14,6 @@ Projetos de estudo implementados seguindo dois cursos específicos da [Alura](ht
 - [Spring Sleuth](https://spring.io/projects/spring-cloud-sleuth) para gerar rastreabilidade de logs distribuídos usando junto com o agregador de logs [papertrail](https://www.papertrail.com/)
 
 ### Insights
-- Projeto atualmente utiliza o MariaDB. *Mudar para um banco em memória assim que possível*.
+- Projeto atualmente utiliza o MariaDB. **Mudar para um banco em memória assim que possível**.
 - [*Anotações Particulares*](https://docs.google.com/document/d/1sJFI5JYPc9hKKCoQTVgRIni93JC1qe3EI10H_xlIlng/edit)
 
