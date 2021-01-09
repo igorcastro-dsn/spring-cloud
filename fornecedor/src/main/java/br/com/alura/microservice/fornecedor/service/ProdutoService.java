@@ -17,6 +17,5 @@ public class ProdutoService {
 	public List<Produto> getProdutosPorEstado(String estado) {
 		return produtoRepository.findByEstado(estado);
 	}
-
 	
 }

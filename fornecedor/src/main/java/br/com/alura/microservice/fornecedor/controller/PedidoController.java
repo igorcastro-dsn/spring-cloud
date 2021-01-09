@@ -17,7 +17,7 @@ import br.com.alura.microservice.fornecedor.model.Pedido;
 import br.com.alura.microservice.fornecedor.service.PedidoService;
 
 @RestController
-@RequestMapping("pedidos")
+@RequestMapping("/pedidos")
 public class PedidoController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(PedidoController.class);

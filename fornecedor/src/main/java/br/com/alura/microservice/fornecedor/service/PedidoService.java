@@ -42,25 +42,23 @@ public class PedidoService {
 		
 		List<Long> idsProdutos = itens
 				.stream()
-				.map(item -> item.getId())
+				.map(ItemDoPedidoDTO::getId)
 				.collect(Collectors.toList());
 		
 		List<Produto> produtosDoPedido = produtoRepository.findByIdIn(idsProdutos);
 		
-		List<PedidoItem> pedidoItens = itens
-			.stream()
-			.map(item -> {
-				Produto produto = produtosDoPedido
-						.stream()
-						.filter(p -> p.getId() == item.getId())
-						.findFirst().get();
-				
-				PedidoItem pedidoItem = new PedidoItem();
-				pedidoItem.setProduto(produto);
-				pedidoItem.setQuantidade(item.getQuantidade());
-				return pedidoItem;
-			})
-			.collect(Collectors.toList());
-		return pedidoItens;
+		return itens.stream()
+					.map(item -> {
+						Produto produto = produtosDoPedido
+								.stream()
+								.filter(p -> p.getId() == item.getId())
+								.findFirst().get();
+						
+						PedidoItem pedidoItem = new PedidoItem();
+						pedidoItem.setProduto(produto);
+						pedidoItem.setQuantidade(item.getQuantidade());
+						return pedidoItem;
+					})
+					.collect(Collectors.toList());
 	}
 }
