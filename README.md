@@ -1,5 +1,5 @@
 # Getting Started
-Projeto de estudo implementado seguindo dois cursos específicos da [Alura](https://www.alura.com.br/)
+Projetos de estudo implementados seguindo dois cursos específicos da [Alura](https://www.alura.com.br/)
 * [Microservices com Spring Cloud: Registry, Config Server e Distributed Tracing](https://cursos.alura.com.br/course/microservices-spring-cloud-service-registry-config-server)
 * [Microservices com Spring Cloud: Circuit Breaker, Hystrix e API Gateway](https://cursos.alura.com.br/course/microservices-spring-cloud-circuit-breaker-api-gateway)
 
