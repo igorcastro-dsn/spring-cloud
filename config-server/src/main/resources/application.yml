@@ -22,3 +22,4 @@ spring:
           uri: https://github.com/igorcastro-dsn/spring-cloud
           search-paths:
           - /configs/fornecedor
+          - /configs/loja
